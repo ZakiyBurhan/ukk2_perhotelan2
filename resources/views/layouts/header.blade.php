@@ -20,8 +20,8 @@
           <input class="form-control mx-3" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
         </form>
-        <a href="/login" class="nav-link text-white" style="margin-left: 120px"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+        <a href="/login" class="nav-link text-white" style="margin-left: 50px"><i class="bi bi-box-arrow-in-right"></i> Login</a>
       </div>
-      <a href="/logout" class="nav-link text-white" style="margin-left: 10px"><i class="bi bi-box-arrow-in-left"></i> Logout</a>
+      <a href="/logout" class="nav-link text-white" style="margin-left: 50px"><i class="bi bi-box-arrow-in-left"></i> Logout</a>
     </div>
   </nav>

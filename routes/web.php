@@ -41,6 +41,9 @@ Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/administrator', function() {
     return view('administrator.index');
 });
+Route::get('/kamar', function() {
+    return view('administrator.kamar');
+});
 Route::get('/fasilitas-kamar', function() {
     return view('administrator.fasilitas-kamar');
 });
