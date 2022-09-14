@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="/administrator" class="brand-link">
       <img src="/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Sarana Prasarana</span>
+      <span class="brand-text font-weight-light">Admin Hotel</span>
     </a>
 
     <!-- Sidebar -->
@@ -23,7 +23,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-                <a href="/kamar" class="nav-link active ">
+                <a href="/kamar" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>Kamar<i class="right fas fa-angle-left"></i></p>
                 </a>
@@ -35,7 +35,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="/fasilitas-umum" class="nav-link">
+                <a href="/fasilitas" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>Fasilitas Umum</p>
                 </a>

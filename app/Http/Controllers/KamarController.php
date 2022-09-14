@@ -1,86 +1,45 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Kamar;
-use App\Http\Requests\StoreKamarRequest;
-use App\Http\Requests\UpdateKamarRequest;
+use Illuminate\Http\Request;
 
 class KamarController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreKamarRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreKamarRequest $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Kamar  $kamar
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Kamar $kamar)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Kamar  $kamar
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Kamar $kamar)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateKamarRequest  $request
-     * @param  \App\Models\Kamar  $kamar
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdateKamarRequest $request, Kamar $kamar)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Kamar  $kamar
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Kamar $kamar)
-    {
-        //
+    public function index(){ 
+        $data = Kamar::all(); 
+        return view('administrator.kamar', compact('data')); 
+    } 
+ 
+    public function create(){ 
+        return view('administrator.tambah_kamar'); 
+    } 
+ 
+    public function store(Request $request){ 
+        $this->validate($request,[ 
+            'tipe'=> 'required', 
+            'harga'=> 'required',
+            'jumlah_kamar'=> 'required',
+        ]); 
+        kamar::create($request->all());
+        return redirect('/kamar');
+        
+    } 
+ 
+    public function tampilan($id){ 
+        $data = kamar::find($id); 
+        return view('administrator.edit_kamar', compact('data')); 
+    } 
+ 
+    public function update(Request $request, $id){ 
+        $data = kamar::find($id); 
+        $data->update($request->all()); 
+        return redirect()->route('kamar'); 
+    } 
+ 
+    public function destroy($id){ 
+        $data = kamar::find($id); 
+        $data->delete(); 
+        return redirect()->route('kamar'); 
     }
 }

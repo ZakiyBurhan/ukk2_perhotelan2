@@ -7,6 +7,8 @@ use App\Http\Controllers\RoomController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\FacilityController;
 use App\Http\Controllers\Fasilitas_KamarController;
+use App\Http\Controllers\FasilitasController;
+use App\Http\Controllers\KamarController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
 
@@ -42,15 +44,29 @@ Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/administrator', function() {
     return view('administrator.index');
 });
-Route::get('/kamar', function() {
-    return view('administrator.kamar');
-});
+// kamar
+Route::get('/kamar', [KamarController::class, 'index'])->name('kamar'); 
+Route::get('/tambah_kamar', [KamarController::class, 'create']); 
+Route::post('/insert_kamar', [KamarController::class, 'store']);
+Route::get('/tampilan_kamar/{id}', [KamarController::class, 'tampilan']); 
+Route::put('/update_kamar/{id}', [KamarController::class, 'update']); 
+Route::delete('/delete_kamar/{id}', [KamarController::class, 'destroy']);
+
+// fasilitas kamar
 Route::get('/fasilitas_kamar', [Fasilitas_KamarController::class, 'index'])->name('fasilitas_kamar'); 
 Route::get('/tambah_fasilitas_kamar', [Fasilitas_KamarController::class, 'create']); 
 Route::post('/insert_fasilitas_kamar', [Fasilitas_KamarController::class, 'store']);
 Route::get('/tampilan_fasilitas_kamar/{id}', [Fasilitas_KamarController::class, 'tampilan']); 
 Route::put('/update_fasilitas_kamar/{id}', [Fasilitas_KamarController::class, 'update']); 
 Route::delete('/delete_fasilitas_kamar/{id}', [Fasilitas_KamarController::class, 'destroy']);
+
+// fasilitas umum
+Route::get('/fasilitas', [FasilitasController::class, 'index'])->name('fasilitas'); 
+Route::get('/tambah_fasilitas', [FasilitasController::class, 'create']); 
+Route::post('/insert_fasilitas', [FasilitasController::class, 'store']);
+Route::get('/tampilan_fasilitas/{id}', [FasilitasController::class, 'tampilan']); 
+Route::put('/update_fasilitas/{id}', [FasilitasController::class, 'update']); 
+Route::delete('/delete_fasilitas/{id}', [FasilitasController::class, 'destroy']);
 
 
 Route::get('/fasilitas-umum', function() {
