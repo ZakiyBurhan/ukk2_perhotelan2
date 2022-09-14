@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\FacilityController;
+use App\Http\Controllers\Fasilitas_KamarController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
 
@@ -44,9 +45,14 @@ Route::get('/administrator', function() {
 Route::get('/kamar', function() {
     return view('administrator.kamar');
 });
-Route::get('/fasilitas-kamar', function() {
-    return view('administrator.fasilitas-kamar');
-});
+Route::get('/fasilitas_kamar', [Fasilitas_KamarController::class, 'index'])->name('fasilitas_kamar'); 
+Route::get('/tambah_fasilitas_kamar', [Fasilitas_KamarController::class, 'create']); 
+Route::post('/insert_fasilitas_kamar', [Fasilitas_KamarController::class, 'store']);
+Route::get('/tampilan_fasilitas_kamar/{id}', [Fasilitas_KamarController::class, 'tampilan']); 
+Route::put('/update_fasilitas_kamar/{id}', [Fasilitas_KamarController::class, 'update']); 
+Route::delete('/delete_fasilitas_kamar/{id}', [Fasilitas_KamarController::class, 'destroy']);
+
+
 Route::get('/fasilitas-umum', function() {
     return view('administrator.fasilitas-umum');
 });

@@ -29,7 +29,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="/fasilitas-kamar" class="nav-link">
+                <a href="/fasilitas_kamar" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>Fasilitas Kamar</p>
                 </a>

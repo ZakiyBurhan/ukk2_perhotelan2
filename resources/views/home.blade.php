@@ -7,15 +7,15 @@
 <div class="container5">
     <div class="d">
         <center>
-            <h1>Meat Our Doctors</h1>
+            <h1>Rekomendasi</h1>
         </center>
     </div>
     <div class="profile-container" style="display: flex; justify-content: space-around">
         <div class="card" style="width: 400px">
             <img src="/assets/kamar.jpg" alt="" class="card-img">
             <div class="card-body">
-                <h2>Herry Gerrt</h2>
-                <p>General Praticloner</p>
+                <h2>Hotel bandung</h2>
+                <p>fasilitas lengakap</p>
                 <div class="icon">
                     <img src="https://img.icons8.com/material-outlined/20/000000/facebook-new.png" />
                     <img src="https://img.icons8.com/ios/20/000000/twitter--v1.png" />
@@ -28,8 +28,8 @@
         <div class="card" style="width: 400px">
             <img src="/assets/kamar.jpg" alt="" class="card-img">
             <div class="card-body">
-                <h2>Herry Gerrt</h2>
-                <p>General Praticloner</p>
+                <h2>Hotel Jakarta</h2>
+                <p>Fasilitas Lengkap</p>
                 <div class="icon">
                     <img src="https://img.icons8.com/material-outlined/20/000000/facebook-new.png" />
                     <img src="https://img.icons8.com/ios/20/000000/twitter--v1.png" />
@@ -41,8 +41,8 @@
         <div class="card" style="width: 400px">
             <img src="/assets/kamar.jpg" alt="" class="card-img">
             <div class="card-body">
-                <h2>Herry Gerrt</h2>
-                <p>General Praticloner</p>
+                <h2>Hotel Semarang</h2>
+                <p>Fasilitas Lengkap</p>
                 <div class="icon">
                     <img src="https://img.icons8.com/material-outlined/20/000000/facebook-new.png" />
                     <img src="https://img.icons8.com/ios/20/000000/twitter--v1.png" />
@@ -61,8 +61,8 @@
         <div class="card" style="width: 400px">
             <img src="/assets/kamar.jpg" alt="" class="card-img">
             <div class="card-body">
-                <h2>Herry Gerrt</h2>
-                <p>General Praticloner</p>
+                <h2>Hotel Surabaya</h2>
+                <p>Fasilitas Lengkap</p>
                 <div class="icon">
                     <img src="https://img.icons8.com/material-outlined/20/000000/facebook-new.png" />
                     <img src="https://img.icons8.com/ios/20/000000/twitter--v1.png" />
@@ -75,8 +75,8 @@
         <div class="card" style="width: 400px">
             <img src="/assets/kamar.jpg" alt="" class="card-img">
             <div class="card-body">
-                <h2>Herry Gerrt</h2>
-                <p>General Praticloner</p>
+                <h2>Hotel Malang</h2>
+                <p>Fasilitas Lengkap</p>
                 <div class="icon">
                     <img src="https://img.icons8.com/material-outlined/20/000000/facebook-new.png" />
                     <img src="https://img.icons8.com/ios/20/000000/twitter--v1.png" />
@@ -88,8 +88,8 @@
         <div class="card" style="width: 400px">
             <img src="/assets/kamar.jpg" alt="" class="card-img">
             <div class="card-body">
-                <h2>Herry Gerrt</h2>
-                <p>General Praticloner</p>
+                <h2>Hotel Bogor</h2>
+                <p>Fasilitas Lengkap</p>
                 <div class="icon">
                     <img src="https://img.icons8.com/material-outlined/20/000000/facebook-new.png" />
                     <img src="https://img.icons8.com/ios/20/000000/twitter--v1.png" />
