@@ -15,12 +15,9 @@
             <img src="/assets/kamar.jpg" alt="" class="card-img">
             <div class="card-body">
                 <h2>Hotel bandung</h2>
-                <p>fasilitas lengakap</p>
+                <p>Rp 150.000</p>
                 <div class="icon">
-                    <img src="https://img.icons8.com/material-outlined/20/000000/facebook-new.png" />
-                    <img src="https://img.icons8.com/ios/20/000000/twitter--v1.png" />
-                    <img src="https://img.icons8.com/ios/20/000000/google-plus.png" />
-                    <img src="https://img.icons8.com/material-outlined/20/000000/facebook-messenger--v1.png" />
+                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
 
@@ -31,10 +28,7 @@
                 <h2>Hotel Jakarta</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <img src="https://img.icons8.com/material-outlined/20/000000/facebook-new.png" />
-                    <img src="https://img.icons8.com/ios/20/000000/twitter--v1.png" />
-                    <img src="https://img.icons8.com/ios/20/000000/google-plus.png" />
-                    <img src="https://img.icons8.com/material-outlined/20/000000/facebook-messenger--v1.png" />
+                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
         </div>
@@ -44,10 +38,7 @@
                 <h2>Hotel Semarang</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <img src="https://img.icons8.com/material-outlined/20/000000/facebook-new.png" />
-                    <img src="https://img.icons8.com/ios/20/000000/twitter--v1.png" />
-                    <img src="https://img.icons8.com/ios/20/000000/google-plus.png" />
-                    <img src="https://img.icons8.com/material-outlined/20/000000/facebook-messenger--v1.png" />
+                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
         </div>
@@ -64,10 +55,7 @@
                 <h2>Hotel Surabaya</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <img src="https://img.icons8.com/material-outlined/20/000000/facebook-new.png" />
-                    <img src="https://img.icons8.com/ios/20/000000/twitter--v1.png" />
-                    <img src="https://img.icons8.com/ios/20/000000/google-plus.png" />
-                    <img src="https://img.icons8.com/material-outlined/20/000000/facebook-messenger--v1.png" />
+                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
 
@@ -78,10 +66,7 @@
                 <h2>Hotel Malang</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <img src="https://img.icons8.com/material-outlined/20/000000/facebook-new.png" />
-                    <img src="https://img.icons8.com/ios/20/000000/twitter--v1.png" />
-                    <img src="https://img.icons8.com/ios/20/000000/google-plus.png" />
-                    <img src="https://img.icons8.com/material-outlined/20/000000/facebook-messenger--v1.png" />
+                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
         </div>
@@ -91,10 +76,7 @@
                 <h2>Hotel Bogor</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <img src="https://img.icons8.com/material-outlined/20/000000/facebook-new.png" />
-                    <img src="https://img.icons8.com/ios/20/000000/twitter--v1.png" />
-                    <img src="https://img.icons8.com/ios/20/000000/google-plus.png" />
-                    <img src="https://img.icons8.com/material-outlined/20/000000/facebook-messenger--v1.png" />
+                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
         </div>

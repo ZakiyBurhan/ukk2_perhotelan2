@@ -11,7 +11,6 @@
             <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Tipe kamar</th>
-                <th scope="col">Tipe kamar</th>
                 <th scope="col">Harga</th>
                 <th scope="col">Jumlah Kamar</th>
                 <th scope="col">Action</th>
