@@ -1,86 +1,42 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Reservasi;
-use App\Http\Requests\StoreReservasiRequest;
-use App\Http\Requests\UpdateReservasiRequest;
+use Illuminate\Http\Request;
 
 class ReservasiController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreReservasiRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreReservasiRequest $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Reservasi  $reservasi
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Reservasi $reservasi)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Reservasi  $reservasi
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Reservasi $reservasi)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateReservasiRequest  $request
-     * @param  \App\Models\Reservasi  $reservasi
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdateReservasiRequest $request, Reservasi $reservasi)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Reservasi  $reservasi
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Reservasi $reservasi)
-    {
-        //
+    public function index(){ 
+        $data = reservasi::all(); 
+        return view('resepsionis.reservasi', compact('data')); 
+    } 
+ 
+    public function store(Request $request){ 
+        $this->validate($request,[ 
+            'user_id'=> 'required', 
+            'kamar_id'=> 'required',
+            'tanggal_checkin'=> 'required',
+            'tanggal_checkout'=> 'required',
+        ]); 
+        reservasi::create($request->all());
+        return redirect('/reservasi');
+        
+    } 
+ 
+    public function tampilan($id){ 
+        $data = reservasi::find($id); 
+        return view('resepsionis.edit_reservasi', compact('data')); 
+    } 
+ 
+    public function update(Request $request, $id){ 
+        $data = reservasi::find($id); 
+        $data->update($request->all()); 
+        return redirect()->route('reservasi'); 
+    } 
+ 
+    public function destroy($id){ 
+        $data = reservasi::find($id); 
+        $data->delete(); 
+        return redirect()->route('reservasi'); 
     }
 }

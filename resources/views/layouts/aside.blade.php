@@ -40,6 +40,12 @@
                 <p>Fasilitas Umum</p>
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="/reservasi" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>Resepsionis</p>
+                </a>
+            </li>
           </ul>
       </nav>
       <!-- /.sidebar-menu -->

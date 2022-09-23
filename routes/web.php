@@ -11,6 +11,7 @@ use App\Http\Controllers\FasilitasController;
 use App\Http\Controllers\KamarController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ReservasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,9 +28,9 @@ use App\Http\Controllers\DashboardController;
 //     return view('welcome');
 // });
 
-Route::get('/', function() {
-    return view('home');
-});
+// Route::get('/', function() {
+//     return view('home');
+// });
 
 Route::get('/room', [RoomController::class, 'index']);
 Route::get('/facility', [FacilityController::class, 'index']);
@@ -67,6 +68,13 @@ Route::post('/insert_fasilitas', [FasilitasController::class, 'store']);
 Route::get('/tampilan_fasilitas/{id}', [FasilitasController::class, 'tampilan']); 
 Route::put('/update_fasilitas/{id}', [FasilitasController::class, 'update']); 
 Route::delete('/delete_fasilitas/{id}', [FasilitasController::class, 'destroy']);
+
+// kamar
+Route::get('/reservasi', [ReservasiController::class, 'index'])->name('reservasi'); 
+Route::post('/insert_reservasi', [ReservasiController::class, 'store']);
+Route::get('/tampilan_reservasi/{id}', [ReservasiController::class, 'tampilan']); 
+Route::put('/update_reservasi/{id}', [ReservasiController::class, 'update']); 
+Route::delete('/delete_reservasi/{id}', [ReservasiController::class, 'destroy']);
 
 
 Route::get('/fasilitas-umum', function() {

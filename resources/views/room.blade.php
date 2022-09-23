@@ -7,17 +7,17 @@
     </div>
     <div class="container1" style="display: flex">
         <div class="container2" style="width: 100%;">
-            <div class="col-sm-5">
-                <label class="px col-sm-3 col-from-label">Number Of room</label>
+            <div class="col-sm-6">
+                <label class="px col-sm-5 col-from-label">Number Of room</label>
                 <input type="text" class="form-control" placeholder="Number room">
             </div>
     
-            <div class="col-sm-5">
+            <div class="col-sm-6">
                 <label class="col-sm-3 col-from-label">Name</label>
                 <input type="text" class="form-control" placeholder="Name">
             </div>
     
-            <div class="col-sm-5">
+            <div class="col-sm-6">
                 <label class="col-sm-5 col-from-label">Phone Number</label>
                 <input type="number" class="form-control" placeholder="+62">
             </div>
@@ -25,20 +25,22 @@
 
         <div class="container3" style="display: flex">
             <div class="container9" style="width: 600px">
-            <div class="col-sm-3">
+            <div class="col-sm-6">
                 <label class="col-sm-20 col-from-label">Check-in date</label>
                 <input type="date" class="form-control" placeholder="+62">
             </div>
     
-            <div class="col-sm-3">
+            <div class="col-sm-6">
                 <label class="col-sm-15 col-from-label">Check-out date</label>
                 <input type="date" class="form-control" placeholder="+62">
             </div>
     
-            <div class="col-sm-5">
+            <div class="col-sm-6">
                 <label class="col-sm-5 col-from-label">payment</label>
                 <input type="text" class="form-control" placeholder="">
             </div>
+            <br>
+            <button type="submit" class="btn btn-primary col-sm-4">Submit</button> 
         </div>
      </div>
     </div>
