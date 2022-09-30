@@ -7,7 +7,7 @@
         <div class="col-8"> 
             <div class="card"> 
                 <div class="card-body" style="width:90%"> 
-                  <form method="POST" action="/update_resrvasi/{{ $data->id }}"> 
+                  <form method="POST" action="/update_reservasi/{{ $data->id }}"> 
                     @csrf 
                     @method('put') 
                     <div class="mb-3"> 

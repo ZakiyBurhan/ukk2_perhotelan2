@@ -12,16 +12,16 @@
           <li class="nav-item">
             <a class="nav-link {{ Request::is('room') ? 'active' : '' }}" href="/room">Room</a>
           </li>
+          @if(auth()->user()->role == 'admin')
           <li class="nav-item">
-            <a class="nav-link {{ Request::is('facility') ? 'active' : '' }}" href="/facility">Facility</a>
+            <a class="nav-link {{ Request::is('facility') ? 'active' : '' }}" href="/administrator">Admin</a>
           </li>
+          @endif
         </ul>
         <form class="d-flex col-8" role="search" method>
           <input class="form-control mx-3" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
         </form>
-        <a href="/login" class="nav-link text-white" style="margin-left: 10px"><i class="bi bi-box-arrow-in-right"></i> Login</a>
-      </div>
       <a href="/login" class="nav-link text-white" style="margin-left: 10px"><i class="bi bi-box-arrow-in-left"></i> Logout</a>
     </div>
   </nav>

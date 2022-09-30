@@ -2,9 +2,9 @@
 
 @section('container')
 <div class="room">
-    <div class="judul">
-        <h3>Make A Reservasition</h3>
-    </div>
+    <main class="form-registration">
+        <h1 class="h3 mb-3 fw-normal text-center mt-2">Make A Reservasition</h1>
+        <a type="button" href="/tambah_room" class="btn btn-success">Tambah +</a>
     <div class="container1" style="display: flex">
         <div class="container2" style="width: 100%;">
             <div class="col-sm-6">
@@ -40,11 +40,27 @@
                 <input type="text" class="form-control" placeholder="">
             </div>
             <br>
-            <button type="submit" class="btn btn-primary col-sm-4">Submit</button> 
-        </div>
-     </div>
+            @foreach ($data as $row)
+            <tr>
+                <th scope="row">{{ $loop->iteration }}</th>
+                <td>{{ $row->user_id }}</td>
+                <td>{{ $row->kamar_id }}</td>
+                <td>{{ $row->tanggal_checkin }}</td>
+                <td>{{ $row->tanggal_checkout }}</td>
+                <td>{{ $row->payment }}</td>
+                <td class="d-flex">
+                    <form action="/delete_room/{{ $row->id }}" method="POST" style="margin-right:20px">
+                        @csrf
+                        @method('delete')
+                        <button type="submit" class="btn btn-danger me-4">Delete</button>
+                    </form>
+                    <a type="button" href="/tampilan_room{{ $row->id }}"
+                        class="btn btn-warning mr-2">Edit</a>
+                </td>
+            </tr>
+            @endforeach
     </div>
-    
+</div>
 </div>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
