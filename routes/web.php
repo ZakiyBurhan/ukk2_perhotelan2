@@ -24,16 +24,16 @@ use App\Http\Controllers\ReservasiController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('home');
+})->middleware('auth');
 
-// Route::get('/', function() {
-//     return view('home');
-// });
-
-Route::get('/room', [RoomController::class, 'index']);
-Route::get('/facility', [FacilityController::class, 'index']);
+Route::get('/room', [RoomController::class, 'index'])->name('fasilitas'); 
+Route::get('/tambah_room', [RoomController::class, 'create']); 
+Route::POST('/insert_room', [RoomController::class, 'store']);
+Route::get('/tampilan_room/{id}', [RoomController::class, 'tampilan']); 
+Route::put('/update_room/{id}', [RoomController::class, 'update']); 
+Route::delete('/delete_room/{id}', [RoomController::class, 'destroy']);
 
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
@@ -70,12 +70,12 @@ Route::put('/update_fasilitas/{id}', [FasilitasController::class, 'update']);
 Route::delete('/delete_fasilitas/{id}', [FasilitasController::class, 'destroy']);
 
 // kamar
-Route::get('/reservasi', [ReservasiController::class, 'index'])->name('reservasi'); 
+Route::get('/reservasi', [ReservasiController::class, 'index'])->name('fasilitas'); 
+Route::get('/tambah_reservasi', [ReservasiController::class, 'create']); 
 Route::post('/insert_reservasi', [ReservasiController::class, 'store']);
 Route::get('/tampilan_reservasi/{id}', [ReservasiController::class, 'tampilan']); 
 Route::put('/update_reservasi/{id}', [ReservasiController::class, 'update']); 
 Route::delete('/delete_reservasi/{id}', [ReservasiController::class, 'destroy']);
-
 
 Route::get('/fasilitas-umum', function() {
     return view('administrator.fasilitas-umum');
@@ -90,3 +90,7 @@ Route::get('/resepsionis-fasilitas-umum', function() {
     return view('resepsionis.fasilitas-umum');
 });
 
+Route::group(['middleware' => ['auth','checkrole:admin']],function () {
+    Route::get('admin', function () { return view('admin'); })->middleware('checkRole:admin');
+    Route::get('user', function () { return view('user'); })->middleware(['checkRole:user,admin']);
+});

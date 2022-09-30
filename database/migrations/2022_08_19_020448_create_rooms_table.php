@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('reservasis', function (Blueprint $table) {
+        Schema::create('rooms', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id');
-            $table->foreignId('kamar_id');
+            $table->string('user_id');
+            $table->string('kamar_id');
             $table->date('tanggal_checkin');
             $table->date('tanggal_checkout');
             $table->string('payment');
@@ -31,7 +31,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reservasis');
+        Schema::dropIfExists('rooms');
     }
 
     

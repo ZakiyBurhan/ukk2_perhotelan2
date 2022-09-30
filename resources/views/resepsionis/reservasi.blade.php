@@ -4,6 +4,7 @@
 <div class="container pt-2">
     <div class="judul mb-2">
         <h1 class="text-center">kamar</h1>
+        <a type="button" href="/tambah_reservasi" class="btn btn-success">Tambah +</a>
     </div>
     <table class="table table-dark table-hover">
         <thead>
