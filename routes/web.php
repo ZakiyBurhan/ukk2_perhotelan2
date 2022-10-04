@@ -30,7 +30,7 @@ Route::get('/', function () {
 
 Route::get('/room', [RoomController::class, 'index'])->name('fasilitas'); 
 Route::get('/tambah_room', [RoomController::class, 'create']); 
-Route::POST('/insert_room', [RoomController::class, 'store']);
+Route::post('/insert_room', [RoomController::class, 'store']);
 Route::get('/tampilan_room/{id}', [RoomController::class, 'tampilan']); 
 Route::put('/update_room/{id}', [RoomController::class, 'update']); 
 Route::delete('/delete_room/{id}', [RoomController::class, 'destroy']);

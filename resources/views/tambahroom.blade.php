@@ -1,4 +1,4 @@
-@extends('layouts.maindash')
+@extends('layouts.main')
 
 @section('container')
 <div class="container">
@@ -10,7 +10,7 @@
                     <form method="POST" action="/insert_room/" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3"> 
-                            <label for="exampleInputEmail1" class="form-label">User</label> 
+                            <label for="exampleInputEmail1" class="form-label">nama</label> 
                             <input type="text" name="user_id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
                             @error('user_id') 
                             <div class="text-danger"> 
@@ -20,7 +20,7 @@
                         </div> 
      
                        <div class="mb-3"> 
-                            <label for="exampleInputEmail1" class="form-label">Kamar</label> 
+                            <label for="exampleInputEmail1" class="form-label">Tipe Kamar</label> 
                             <input type="text" name="kamar_id"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
                             @error('kamar_id') 
                             <div class="text-danger"> 
@@ -28,6 +28,17 @@
                             </div> 
                             @enderror 
                         </div> 
+
+                        <div class="mb-3"> 
+                             <label for="exampleInputEmail1" class="form-label">jumblah kamar</label> 
+                             <input type="text" name="jumblah_kamar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                             @error('jumblah_kamar') 
+                             <div class="text-danger"> 
+                                 {{ $message }} 
+                             </div> 
+                             @enderror 
+                         </div> 
+                         
     
                        <div class="mb-3"> 
                             <label for="exampleInputEmail1" class="form-label">Tanggal Checkin</label> 
@@ -49,16 +60,6 @@
                             @enderror 
                         </div> 
     
-                       <div class="mb-3"> 
-                            <label for="exampleInputEmail1" class="form-label">payment</label> 
-                            <input type="text" name="payment" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
-                            @error('payment') 
-                            <div class="text-danger"> 
-                                {{ $message }} 
-                            </div> 
-                            @enderror 
-                        </div> 
-                        
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>

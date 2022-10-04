@@ -17,9 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('user_id');
             $table->string('kamar_id');
+            $table->string('jumblah_kamar');
             $table->date('tanggal_checkin');
             $table->date('tanggal_checkout');
-            $table->string('payment');
             $table->timestamps();
         });
     }
