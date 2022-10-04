@@ -11,9 +11,9 @@
                         @csrf
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Tipe Kamar</label>
-                            <input type="text" name="tipe" class="form-control" id="exampleInputEmail1"
+                            <input type="text" name="tipe_kamar" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
-                            @error('tipe')
+                            @error('tipe_kamar')
                             <div class="text-danger">
                                 {{ $message }}
                             </div>
@@ -33,9 +33,9 @@
 
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Jumlah Kamar</label>
-                            <input type="number" name="jumlah_kamar" class="form-control" id="exampleInputEmail1"
+                            <input type="number" name="jumblah_kamar" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
-                            @error('jumlah_kamar')
+                            @error('jumblah_kamar')
                             <div class="text-danger">
                                 {{ $message }}
                             </div>

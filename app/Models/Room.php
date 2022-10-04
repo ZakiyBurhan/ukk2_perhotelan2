@@ -9,5 +9,15 @@ class Room extends Model
 {
     use HasFactory;
 
-    protected $guarded = ['id'];
+    protected $fillable = [
+        'user_id',
+        'tipe_kamar',
+        'jumblah',
+        'tanggal_checkin',
+        'tanggal_checkout',
+    ];
+
+    public function kamar(){
+        return $this->hasMany(Kamar::class);
+    }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Kamar;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class KamarController extends Controller
 {
@@ -17,9 +18,9 @@ class KamarController extends Controller
  
     public function store(Request $request){ 
         $this->validate($request,[ 
-            'tipe'=> 'required', 
+            'tipe_kamar'=> 'required', 
             'harga'=> 'required',
-            'jumlah_kamar'=> 'required',
+            'jumblah_kamar'=> 'required',
         ]); 
         kamar::create($request->all());
         return redirect('/kamar');

@@ -14,19 +14,19 @@ return new class extends Migration
      */
     public function up()
     {
-        DB::unprepared('CREATE TRIGGER update_jumlah_kamar after INSERT ON rooms
+        DB::unprepared('CREATE TRIGGER update_jumblah after INSERT ON rooms
             FOR EACH ROW
             BEGIN UPDATE kamars set
-            jumblah_kamar = jumblah_kamar - NEW.jumblah_kamar
-            WHERE kamar_id = NEW.kamar_id;
+            jumblah_kamar = jumblah_kamar - NEW.jumblah
+            WHERE tipe_kamar = NEW.tipe_kamar;
             END'
         );
 
-        DB::unprepared('CREATE TRIGGER delete_jumlah_kamar after DELETE ON rooms
+        DB::unprepared('CREATE TRIGGER delete_jumblah after DELETE ON rooms
             FOR EACH ROW
             BEGIN UPDATE kamars set
-            jumblah_kamar = jumblah_kamar + OLD.jumblah_kamar
-            WHERE kamar_id = OLD.kamar_id;
+            jumblah_kamar = jumblah_kamar + OLD.jumblah
+            WHERE tipe_kamar = OLD.tipe_kamar;
             END'
         );
     }

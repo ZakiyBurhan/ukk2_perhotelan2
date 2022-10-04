@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('kamars', function (Blueprint $table) {
             $table->id();
-            $table->string('tipe');
+            $table->string('tipe_kamar');
             $table->float('harga');
-            $table->integer('jumlah_kamar');
+            $table->integer('jumblah_kamar');
             $table->timestamps();
         });
     }
