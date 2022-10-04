@@ -4,7 +4,7 @@
 <div class="container pt-2">
     <div class="judul mb-2">
         <h1 class="text-center">kamar</h1>
-        {{-- <a type="button" href="/tambah_room" class="btn btn-success">Tambah +</a> --}}
+        <!-- {{-- <a type="button" href="/tambah_room" class="btn btn-success">Tambah +</a> --}} -->
     </div>
     <table class="table table-bordered">
         <thead>
@@ -27,7 +27,7 @@
                 <td>{{ $row->jumblah_kamar }}</td>
                 <td>{{ $row->tanggal_checkin }}</td>
                 <td>{{ $row->tanggal_checkout }}</td>
-                {{-- <td class="d-flex"> --}}
+                <!-- {{-- <td class="d-flex"> --}}
                     {{-- <form action="/delete_room/{{ $row->id }}" method="POST" style="margin-right:20px">
                         @csrf
                         @method('delete')
@@ -36,11 +36,11 @@
                     <a type="button" href="/tampilan_room{{ $row->id }}"
                         class="btn btn-warning mr-2">Edit</a> --}}
                 {{-- </td>
-            </tr> --}}
+            </tr> --}} -->
             @endforeach
-    {{-- </div>
+    <!-- {{-- </div>
 </div>
-</div> --}}
+</div> --}} -->
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">

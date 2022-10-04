@@ -92,34 +92,22 @@
     </div>
     <div class="profile-container" style="display: flex; justify-content: space-around">
         <div class="card" style="width: 350px">
-            <img src="/assets/kamar.jpg" alt="" class="card-img">
+            <img src="/assets/kolamrenang.jpg" alt="" class="card-img">
             <div class="card-body">
-                <h2>Hotel bandung</h2>
-                <p>Rp 150.000</p>
-                <div class="icon">
-                    <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
-                </div>
+                <h2>Kolam Renang</h2>
             </div>
 
         </div>
         <div class="card" style="width: 400px">
-            <img src="/assets/kamar.jpg" alt="" class="card-img">
+            <img src="/assets/olahraga.jpg" alt="" class="card-img">
             <div class="card-body">
-                <h2>Hotel Jakarta</h2>
-                <p>Fasilitas Lengkap</p>
-                <div class="icon">
-                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
-                </div>
+                <h2>Gym</h2>
             </div>
         </div>
         <div class="card" style="width: 400px">
-            <img src="/assets/kamar.jpg" alt="" class="card-img">
+            <img src="/assets/spa.jpg" alt="" class="card-img">
             <div class="card-body">
-                <h2>Hotel Semarang</h2>
-                <p>Fasilitas Lengkap</p>
-                <div class="icon">
-                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
-                </div>
+                <h2>Spa</h2>
             </div>
         </div>
     </div>
@@ -130,15 +118,10 @@
     </div>
     <div class="profile-container" style="display: flex; justify-content: space-around">
         <div class="card" style="width: 400px">
-            <img src="/assets/kamar.jpg" alt="" class="card-img">
+            <img src="/assets/dinner.jpg" alt="" class="card-img">
             <div class="card-body">
-                <h2>Hotel Surabaya</h2>
-                <p>Fasilitas Lengkap</p>
-                <div class="icon">
-                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
-                </div>
+                <h2>Restoran</h2>
             </div>
-
         </div>
         <div class="card" style="width: 400px">
             <img src="/assets/kamar.jpg" alt="" class="card-img">
