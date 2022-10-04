@@ -12,8 +12,8 @@
                     @method('put') 
                     <div class="mb-3"> 
                         <label for="exampleInputEmail1" class="form-label">Tipe Kamar</label> 
-                        <input type="text" name="tipe" value="{{ $data->tipe}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
-                        @error('tipe') 
+                        <input type="text" name="tipe_kamar" value="{{ $data->tipe}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                        @error('tipe_kamar') 
                         <div class="text-danger"> 
                             {{ $message }} 
                         </div> 
@@ -32,8 +32,8 @@
 
                    <div class="mb-3"> 
                         <label for="exampleInputEmail1" class="form-label">Jumlah Kamar</label> 
-                        <input type="int" name="jumlah_kamar" value="{{ $data->jumlah_kamar }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
-                        @error('jumlah_kamar') 
+                        <input type="int" name="jumblah_kamar" value="{{ $data->jumlah_kamar }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                        @error('jumblah_kamar') 
                         <div class="text-danger"> 
                             {{ $message }} 
                         </div> 

@@ -23,8 +23,8 @@
             <tr>
                 <th scope="row">{{ $loop->iteration }}</th>
                 <td>{{ $row->user_id }}</td>
-                <td>{{ $row->kamar_id }}</td>
-                <td>{{ $row->jumblah_kamar }}</td>
+                <td>{{ $row->tipe_kamar }}</td>
+                <td>{{ $row->jumblah }}</td>
                 <td>{{ $row->tanggal_checkin }}</td>
                 <td>{{ $row->tanggal_checkout }}</td>
                 <!-- {{-- <td class="d-flex"> --}}

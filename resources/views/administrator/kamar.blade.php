@@ -20,9 +20,9 @@
           @foreach ($data as $row)
             <tr>
                 <th scope="row">{{ $loop->iteration }}</th>
-                <td>{{ $row->tipe }}</td>
+                <td>{{ $row->tipe_kamar }}</td>
                 <td>{{ $row->harga }}</td>
-                <td>{{ $row->jumlah_kamar }}</td>
+                <td>{{ $row->jumblah_kamar }}</td>
                 <td class="d-flex">
                     <form action="/delete_kamar/{{ $row->id }}" method="POST" style="margin-right:20px">
                         @csrf

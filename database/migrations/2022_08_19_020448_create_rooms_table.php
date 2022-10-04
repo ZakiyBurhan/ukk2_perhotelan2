@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('rooms', function (Blueprint $table) {
             $table->id();
             $table->string('user_id');
-            $table->string('kamar_id');
-            $table->string('jumblah_kamar');
+            $table->string('tipe_kamar');
+            $table->integer('jumblah');
             $table->date('tanggal_checkin');
             $table->date('tanggal_checkout');
             $table->timestamps();

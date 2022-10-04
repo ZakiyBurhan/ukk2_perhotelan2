@@ -21,8 +21,8 @@
      
                        <div class="mb-3"> 
                             <label for="exampleInputEmail1" class="form-label">Tipe Kamar</label> 
-                            <input type="text" name="kamar_id"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
-                            @error('kamar_id') 
+                            <input type="text" name="tipe_kamar"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                            @error('tipe_kamar') 
                             <div class="text-danger"> 
                                 {{ $message }} 
                             </div> 
@@ -31,8 +31,8 @@
 
                         <div class="mb-3"> 
                              <label for="exampleInputEmail1" class="form-label">jumblah kamar</label> 
-                             <input type="text" name="jumblah_kamar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
-                             @error('jumblah_kamar') 
+                             <input type="text" name="jumblah" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                             @error('jumblah') 
                              <div class="text-danger"> 
                                  {{ $message }} 
                              </div> 
