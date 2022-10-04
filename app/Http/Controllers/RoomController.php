@@ -14,7 +14,8 @@ class RoomController extends Controller
     } 
  
     public function create(){ 
-        return view('tambahroom'); 
+        $kamar = Kamar::all();
+        return view('tambahroom', compact('kamar')); 
     } 
  
     public function store(Request $request){ 

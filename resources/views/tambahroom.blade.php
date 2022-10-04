@@ -10,7 +10,7 @@
                     <form method="POST" action="/insert_room/" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3"> 
-                            <label for="exampleInputEmail1" class="form-label">nama</label> 
+                            <label for="exampleInputEmail1" class="form-label">Nama</label> 
                             <input type="text" name="user_id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
                             @error('user_id') 
                             <div class="text-danger"> 
@@ -19,18 +19,18 @@
                             @enderror 
                         </div> 
      
-                       <div class="mb-3"> 
-                            <label for="exampleInputEmail1" class="form-label">Tipe Kamar</label> 
-                            <input type="text" name="tipe_kamar"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
-                            @error('tipe_kamar') 
-                            <div class="text-danger"> 
-                                {{ $message }} 
-                            </div> 
-                            @enderror 
-                        </div> 
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Tipe Kamar</label>
+                            <select class="form-control" id="tipe_kamar" aria-label="Default select example" name="tipe_kamar">
+                                <option value="">-- Pilih --</option>
+                                @foreach ($kamar as $data)
+                                <option value="{{$data->tipe_kamar}}">{{ $data->tipe_kamar}}</option>
+                                @endforeach
+                            </select>
+                        </div>
 
                         <div class="mb-3"> 
-                             <label for="exampleInputEmail1" class="form-label">jumblah kamar</label> 
+                             <label for="exampleInputEmail1" class="form-label">Jumlah Kamar</label> 
                              <input type="text" name="jumblah" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
                              @error('jumblah') 
                              <div class="text-danger"> 
