@@ -31,7 +31,7 @@
 
                         <div class="mb-3"> 
                              <label for="exampleInputEmail1" class="form-label">Jumlah Kamar</label> 
-                             <input type="text" name="jumblah" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                             <input type="number" name="jumblah" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
                              @error('jumblah') 
                              <div class="text-danger"> 
                                  {{ $message }} 
