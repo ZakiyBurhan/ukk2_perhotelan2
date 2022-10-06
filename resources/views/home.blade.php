@@ -28,7 +28,7 @@
                 <h2>Hotel Jakarta</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
+                    <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                 <h2>Hotel Semarang</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
+                    <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
                 <h2>Hotel Surabaya</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
+                    <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
 
@@ -66,7 +66,7 @@
                 <h2>Hotel Malang</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
+                    <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
         </div>
@@ -76,13 +76,14 @@
                 <h2>Hotel Bogor</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <a type="button" href="/room" class="btn btn-danger">Pesan </a>
+                    <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 </div>
+
 <br>
 <div class="container5">
     <div class="d">
@@ -108,42 +109,7 @@
         </div>
     </div>
 </div>
-    <div class="profile-container" style="display: flex; justify-content: space-around">
-        <div class="mt" style="width: 400px">
-            <img src="/assets/olahraga.jpg" alt="" class="card-img">
-            <div class="card-body">
-                <div class="icon">
-                </div>
-            </div>
-        </div>
-        <div class="mt" style="width: 1000px">
-            <div class="card-body">
-                <h2>Alat Olahraga</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, tempore qui sequi temporibus sed veritatis facere voluptas commodi nisi. Doloremque, alias unde in harum repudiandae ad sunt? Totam exercitationem, nobis sint reiciendis odit laborum, eum nesciunt a laudantium obcaecati dolores tempora iusto sequi minus aliquam natus corrupti! Harum, ex maiores.</p>
-                <div class="icon">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="profile-container" style="display: flex; justify-content: space-around">
-        <div class="mt" style="width: 400px">
-            <img src="/assets/sofa.jpg" alt="" class="card-img">
-            <div class="card-body">
-                <div class="icon">
-                </div>
-            </div>
-        </div>
-        <div class="mt" style="width: 1000px">
-            <div class="card-body">
-                <h2>Tempat Bersantai</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, tempore qui sequi temporibus sed veritatis facere voluptas commodi nisi. Doloremque, alias unde in harum repudiandae ad sunt? Totam exercitationem, nobis sint reiciendis odit laborum, eum nesciunt a laudantium obcaecati dolores tempora iusto sequi minus aliquam natus corrupti! Harum, ex maiores.</p>
-                <div class="icon">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    
     <div class="profile-container" style="display: flex; justify-content: space-around">
         <div class="mt" style="width: 400px">
             <img src="/assets/spa.jpg" alt="" class="card-img">
@@ -180,6 +146,7 @@
         </div>
     </div>
 </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.9673455632337!2d106.83513471443997!3d-6.398209595370474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ebebb472180b%3A0x2aaa8387b566336b!2sJl.%20Kamboja%205%20No.35%2C%20RW.4%2C%20Mekar%20Jaya%2C%20Kec.%20Sukmajaya%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016411!5e0!3m2!1sid!2sid!4v1664979405425!5m2!1sid!2sid" width="1340" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <style type="text/css">
 
