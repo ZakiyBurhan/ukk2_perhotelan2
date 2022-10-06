@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -26,14 +29,16 @@ class LoginController extends Controller
         return back()->with('loginError', 'Login failed!');
     }
 
-    public function logout()
+    public function logout(Request $request)
     {
         Auth::logout();
-
+ 
         request()->session()->invalidate();
-
+        
         request()->session()->regenerateToken();
-
-        return redirect('/');
+ 
+        return redirect('/login');
     }
+    
 }
+

@@ -42,8 +42,8 @@ Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
 Route::get('/dashboard', [DashboardController::class, 'index']);
 
-Route::get('/administrator', function() {
-    return view('administrator.index');
+Route::get('/pilihankamar', function() {
+    return view('pilihankamar');
 });
 // kamar
 Route::get('/kamar', [KamarController::class, 'index'])->name('kamar'); 
