@@ -17,7 +17,7 @@
                 <h2>Hotel bandung</h2>
                 <p>Rp 150.000</p>
                 <div class="icon">
-                    <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
+                    <a type="button" href="/pilihankamar" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
 
@@ -28,7 +28,7 @@
                 <h2>Hotel Jakarta</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
+                    <a type="button" href="/pilihankamar" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                 <h2>Hotel Semarang</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
+                    <a type="button" href="/pilihankamar" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
                 <h2>Hotel Surabaya</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
+                    <a type="button" href="/pilihankamar" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
 
@@ -66,7 +66,7 @@
                 <h2>Hotel Malang</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
+                    <a type="button" href="/pilihankamar" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
                 <h2>Hotel Bogor</h2>
                 <p>Fasilitas Lengkap</p>
                 <div class="icon">
-                    <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
+                    <a type="button" href="/pilihankamar" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
         </div>
