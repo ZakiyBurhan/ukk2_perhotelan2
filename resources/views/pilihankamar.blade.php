@@ -10,7 +10,7 @@
     </div>
     <div class="profile-container" style="display: flex; justify-content: space-around">
         <div class="card" style="width: 400px">
-            <img src="/assets/kamar.jpg" alt="" class="card-img">
+            <img src="/assets/superior.jpg" alt="" class="card-img">
             <div class="card-body">
                 <h2>Superior Room</h2>
                 <div class="icon">
@@ -20,16 +20,16 @@
 
         </div>
         <div class="card" style="width: 400px">
-            <img src="/assets/kamar.jpg" alt="" class="card-img">
+            <img src="/assets/superior.jpg" alt="" class="card-img">
             <div class="card-body">
-                <h2>Single Room</h2>
+                <h2>Superior Room</h2>
                 <div class="icon">
                     <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
                 </div>
             </div>
         </div>
         <div class="card" style="width: 400px">
-            <img src="/assets/kamar.jpg" alt="" class="card-img">
+            <img src="/assets/superior.jpg" alt="" class="card-img">
             <div class="card-body">
                 <h2>Deluxe Room</h2>
                 <div class="icon">
@@ -45,9 +45,9 @@
     </div>
     <div class="profile-container" style="display: flex; justify-content: space-around">
         <div class="card" style="width: 400px">
-            <img src="/assets/kamar.jpg" alt="" class="card-img">
+            <img src="/assets/superior.jpg" alt="" class="card-img">
             <div class="card-body">
-                <h2>Junior Suite Room</h2>
+                <h2>Deluxe Room</h2>
                 <div class="icon">
                     <a type="button" href="/tambah_room" class="btn btn-danger">Pesan </a>
                 </div>
@@ -55,7 +55,7 @@
 
         </div>
         <div class="card" style="width: 400px">
-            <img src="/assets/kamar.jpg" alt="" class="card-img">
+            <img src="/assets/superior.jpg" alt="" class="card-img">
             <div class="card-body">
                 <h2>Suite Room</h2>
                 <div class="icon">
@@ -64,7 +64,7 @@
             </div>
         </div>
         <div class="card" style="width: 400px">
-            <img src="/assets/kamar.jpg" alt="" class="card-img">
+            <img src="/assets/superior.jpg" alt="" class="card-img">
             <div class="card-body">
                 <h2>Presidential Suite</h2>
                 <div class="icon">
